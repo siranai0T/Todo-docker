@@ -13,7 +13,7 @@ services:
       dockerfile: ./php/Dockerfile
     # – (ローカルのリソース):(Dockerコンテナのリソース)
     volumes:
-      - ../laravel-h-on-first-step-app/:/var/www/html
+      - ../Todo-app/:/var/www/html
     environment:
       - DB_CONNECTION=mysql
       - DB_HOST=db
@@ -34,7 +34,7 @@ services:
       - app
     # – (ローカルのリソース):(Dockerコンテナのリソース)
     volumes:
-      - ../laravel-h-on-first-step-app/:/var/www/html
+      - ../Todo-app/:/var/www/html
 
   # DBの設定
   db:
